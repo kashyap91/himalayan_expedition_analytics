@@ -1,0 +1,27 @@
+{% extends base %}
+
+{% block title %}Visualising Himalayan Expeditions{% endblock %}
+
+{% block postamble %}
+  <style>
+    {% include 'styles.css' %}
+  </style>
+{% endblock %}
+
+{% block contents %}
+  <div class="content">
+    <h1>How deadly are the Eight-Thousanders?</h1>
+
+    <p> The summit of Mount Everest is at a staggering 8850 meters. At this altitude, the temperatures can fall to -60 degrees C
+    	and the oxygen available is only 33% of what is available at sea level. The sheer altitude of the Himalayan mountains cause other  
+    	challenges to a climber such as glacier, unstable-serac and ice-fall to name a few. Hence the assumption is that the highest mountains claim the most number of lives. Below is an interactive visualisation to investigate this common assumption. The static graph in the second half of the page visualises the mountains with the highest number of climbers.
+ </p>
+
+    {{ super() }}
+
+    
+    <p> The nested-bar-graph above shows the top 6 mountains in the region with the highest number of climbers. Surprisingly, the highest mountain in the world, Mt.Everest, sees the maximum number of climbers.
+    <p> 
+ 
+  </div>
+{% endblock %}

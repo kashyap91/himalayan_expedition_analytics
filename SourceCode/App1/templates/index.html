@@ -1,0 +1,20 @@
+{% extends base %}
+
+{% block title %}Visualising Himalayan Expeditions{% endblock %}
+
+{% block postamble %}
+  <style>
+    {% include 'styles.css' %}
+  </style>
+{% endblock %}
+
+{% block contents %}
+  <div class="content">
+    <h1>Himalayan Mountaineering Expeditions</h1>
+
+    <p> Forbes Magazine lists Mountaineering as one of the most dangerous sports in the world. Expeditions in the Mighty-Himalayas, at altitudes of over 8500 meters, are without doubt one of the most challenging places to climb. 8500 meters!, that is higher than most helicopters can fly and is in fact comparable to the altitudes at which jet liners fly. Having been listed as one of the most dangerous sports is largely due to the number of casualties that are recorded. Below is an interactive visualisation to identify if Himalayan expeditions have gotten any safer in the last 100 years of climbing. The visualisation in the next page - <a href ="http://localhost:8080/App2"> How deadly are the Eight-Thousanders?</a> - is to investigate the assumption that the highest mountains in the Himalayas tend to be the most dangerous. </p>
+
+    {{ super() }}
+ 
+  </div>
+{% endblock %}
